@@ -24,4 +24,4 @@ jobs:
           pip install pyarrow --upgrade
       - name: Test audio with pytest
         run: |
-          HF_SCRIPTS_VERSION=master python -m pytest -m audio -sv ./tests/
+          HF_SCRIPTS_VERSION=master python -m pytest -m audio -sv ./tests/features/test_audio.py
